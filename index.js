@@ -4,7 +4,7 @@ const { PrismaClient } = require('@prisma/client');
 const cors = require("cors");
 
 const app = express();
-const frontend = 'http://localhost:3000';
+const frontend = 'https://casamento.pollheim.com.br';
 
 app.use(cors({
     origin: frontend,
@@ -129,6 +129,6 @@ app.get('/api/presents', async (req, res) => {
 
 // Inicia o servidor
 const PORT = 3001;
-app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Servidor rodando em http://0.0.0.0:${PORT}`);
 });
