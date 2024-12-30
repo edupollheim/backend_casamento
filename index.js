@@ -4,9 +4,12 @@ const { PrismaClient } = require('@prisma/client');
 const cors = require("cors");
 
 const app = express();
-const frontend = 'http://192.168.100.39:3000';
+const frontend = 'http://127.0.0.1:3000';
 
-app.use(cors());
+app.use(cors({
+    origin: frontend,
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+}));
 
 const prisma = new PrismaClient();
 
