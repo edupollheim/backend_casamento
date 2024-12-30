@@ -4,7 +4,7 @@ const { PrismaClient } = require('@prisma/client');
 const cors = require("cors");
 
 const app = express();
-const frontend = 'http://127.0.0.1:3000';
+const frontend = 'http://localhost:3000';
 
 app.use(cors({
     origin: frontend,
