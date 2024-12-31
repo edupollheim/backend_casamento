@@ -1,0 +1,25 @@
+### Cria recado
+POST http://localhost:3000/recados
+Content-Type: application/json
+
+{
+  "name": "Recado 3",
+  "description": "Descrição do recado 1"
+}
+
+### Lista recados
+GET http://localhost:3000/recados
+Content-Type: application/json
+
+### Atualiza recado
+PATCH  http://localhost:3000/recados/FuJcyP0FNdawj3IUJn41W
+Content-Type: application/json
+
+{
+  "name": "Recado 1",
+  "description": "Descrição do recado 1"
+}
+
+### Deleta recado
+DELETE http://localhost:3000/recados/FuJcyP0FNdawj3IUJn41W
+Content-Type: application/json
