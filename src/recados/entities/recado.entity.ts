@@ -10,7 +10,10 @@ export class Recado {
     name: string;
 
     @Column()
-    description: string;
+    message: string;
+
+    @Column()
+    createdAt: Date;
 
     @BeforeInsert()
     generateId() {

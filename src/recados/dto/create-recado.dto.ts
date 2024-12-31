@@ -1,9 +1,12 @@
-import { IsString } from "class-validator";
+import { IsDate, IsString } from "class-validator";
 
 export class CreateRecadoDto {
     @IsString()
     name: string;
 
     @IsString()
-    description: string;
+    message: string;
+
+    @IsDate()
+    createdAt: Date;
 }
