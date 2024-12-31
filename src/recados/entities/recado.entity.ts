@@ -12,11 +12,12 @@ export class Recado {
     @Column()
     message: string;
 
-    @Column()
+    @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
     createdAt: Date;
 
     @BeforeInsert()
     generateId() {
         this.id = nanoid();
+        this.createdAt = new Date();
     }
 }
