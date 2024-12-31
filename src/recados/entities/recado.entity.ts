@@ -1,4 +1,4 @@
-import { BeforeInsert, Column, Entity, PrimaryColumn } from "typeorm";
+import { BeforeInsert, Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 const { nanoid } = require('nanoid');
 
 @Entity('recados')
@@ -12,12 +12,11 @@ export class Recado {
     @Column()
     message: string;
 
-    @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+    @CreateDateColumn({ type: 'datetime' })
     createdAt: Date;
 
     @BeforeInsert()
     generateId() {
         this.id = nanoid();
-        this.createdAt = new Date();
     }
 }
