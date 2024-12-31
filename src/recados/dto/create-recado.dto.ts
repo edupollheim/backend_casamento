@@ -6,7 +6,4 @@ export class CreateRecadoDto {
 
     @IsString()
     message: string;
-
-    @IsDate()
-    createdAt: Date;
 }
