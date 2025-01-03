@@ -1,0 +1,33 @@
+### GET request
+GET http://localhost:3001/api/padrinhos
+Accept: application/json
+
+
+
+
+
+
+
+### POST request
+POST http://localhost:3001/api/padrinhos
+Content-Type: application/json
+
+{
+    "nome": "Cecilia Iung",
+    "descricao": "Vazio"
+}
+
+
+
+
+
+
+
+### PUT request
+PATCH  http://localhost:3001/api/padrinhos/1
+Content-Type: application/json
+
+{
+    "nome": "Gabriel Weber da Silva",
+    "descricao": "Vazio"
+}

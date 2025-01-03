@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { PresentesModule } from './presentes/presentes.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { RecadosModule } from './recados/recados.module';
+import { PadrinhosModule } from './padrinhos/padrinhos.module';
 
 @Module({
   imports: [
@@ -14,7 +15,7 @@ import { RecadosModule } from './recados/recados.module';
       synchronize: true, // Para desenvolvimento
       // Para produção, é recomendado desativar a sincronização automática e rodar as migrations manualmente
     }), // Configuração a nível de aplicação
-    PresentesModule, RecadosModule],
+    PresentesModule, RecadosModule, PadrinhosModule],
   controllers: [AppController],
   providers: [AppService],
 })
