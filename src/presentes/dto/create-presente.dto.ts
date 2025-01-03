@@ -11,13 +11,7 @@ export class CreatePresenteDto {
 
     @IsNumber()
     price: number;
-    
-    @IsNumber()
-    quantity: number;
 
     @IsString()
     description: string;
-    
-    @IsString()
-    image: string;
 }

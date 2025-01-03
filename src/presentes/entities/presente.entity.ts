@@ -17,14 +17,11 @@ export class Presente {
 
     @Column()
     price: number;
-    
-    @Column()
-    quantity: number;
 
     @Column()
     description: string;
     
-    @Column()
+    @Column({ nullable: true })
     image: string;
 
     // Método para gerar o ID do presente
