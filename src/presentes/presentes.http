@@ -1,19 +1,17 @@
 ### Listar presentes
-GET http://localhost:3001/presentes
+GET http://localhost:3001/api/presentes
 
 ### Busca presente por id
-GET http://localhost:3000/presentes/35OK3lVhHwCQwL9KzagxR
+GET http://localhost:3000/api/presentes/
 
 ### Cadastrar presente
-POST http://localhost:3000/presentes
+POST http://localhost:3001/api/presentes
 Content-Type: application/json
 
 {
     "name": "Presente 1",
-    "price": 100.00,
-    "quantity": 10,
-    "description": "Presente 1 description",
-    "image": "Blob image 1"
+    "price": "100,00",
+    "description": "Presente 1 description"
 }
 
 ### Atualizar presente
