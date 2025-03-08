@@ -24,6 +24,9 @@ export class Presente {
     @Column({ nullable: true })
     image: string;
 
+    @Column({ nullable: true })
+    cc: string;
+
     // Método para gerar o ID do presente
     @BeforeInsert()
     generateId() {

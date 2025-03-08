@@ -2,7 +2,6 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, HttpCode, NotFoundEx
 import { PresentesService } from './presentes.service';
 import { CreatePresenteDto } from './dto/create-presente.dto';
 import { UpdatePresenteDto } from './dto/update-presente.dto';
-import { HTTP_CODE_METADATA } from '@nestjs/common/constants';
 
 // Controller que gerencia as requisições HTTP para a entidade Presente
 // Ele faz a comunicação entre a requisição HTTP e a camada de serviço

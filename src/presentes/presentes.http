@@ -2,7 +2,7 @@
 GET http://localhost:3001/api/presentes
 
 ### Busca presente por id
-GET http://localhost:3000/api/presentes/
+GET http://localhost:3000/api/photos/
 
 ### Cadastrar presente
 POST http://localhost:3001/api/presentes

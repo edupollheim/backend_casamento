@@ -5,6 +5,7 @@ import { ValidationPipe } from '@nestjs/common';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
+  app.enableCors(); 
   app.useGlobalPipes(new ValidationPipe({
     transform: true, // Realiza a transformação dos dados para o tipo esperado
     whitelist: true, // Remove campos não definidos no DTO

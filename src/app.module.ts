@@ -5,6 +5,7 @@ import { PresentesModule } from './presentes/presentes.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { RecadosModule } from './recados/recados.module';
 import { PadrinhosModule } from './padrinhos/padrinhos.module';
+import { PhotosModule } from './photos/photos.module';
 
 @Module({
   imports: [
@@ -15,7 +16,7 @@ import { PadrinhosModule } from './padrinhos/padrinhos.module';
       synchronize: true, // Para desenvolvimento
       // Para produção, é recomendado desativar a sincronização automática e rodar as migrations manualmente
     }), // Configuração a nível de aplicação
-    PresentesModule, RecadosModule, PadrinhosModule],
+    PresentesModule, RecadosModule, PadrinhosModule, PhotosModule],
   controllers: [AppController],
   providers: [AppService],
 })
